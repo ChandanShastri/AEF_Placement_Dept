@@ -20,7 +20,7 @@ else{
 
 
 <div class="container">
-<br><br><hr><h3>Manage Events</h3><br>
+<br><br><hr><h3>View Registered Students</h3><br>
 
 <?php
 

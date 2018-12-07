@@ -31,7 +31,7 @@
         <h1>Placement Drive Management </h1><br>
         <img src='images/1.jpg' width='100%' height="200px"><br><br>
         <a href="add.php"><button class="btn btn-primary">Add a new Drive</button></a>&nbsp;
-        <a href="view.php"><button class="btn btn-success">View Registered Students</button></a><br><br>
+        <a href="managedrives.php"><button class="btn btn-success">View Registered Students</button></a><br><br>
         </center>
 
     </body>
