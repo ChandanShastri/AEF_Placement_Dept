@@ -7,11 +7,8 @@
 
 <?php
 session_start();
-if(isset($_SESSION['admin'])){
-    include "config.php";
-}
-else{
-  header("Location:admin.php");
+if(!isset($_SESSION['admin'])){
+header("Location:admin.php");
 }
 
 ?>
@@ -23,7 +20,7 @@ else{
 <br><br><hr><h3>View Registered Students</h3><br>
 
 <?php
-
+  include "config.php";
 $event="SELECT * FROM drives";
 $result = mysqli_query($sccon,$event);
 

@@ -48,7 +48,7 @@ else {
   <div class="row"><div class='col'><b>Job Type : </b><select class="form-control" required name="drtype">
         <option value="Technical">Technical</option>
         <option value="Support Engineer">Support Engineer</option>
-        <option value="Support Engineer">Support Engineer</option>
+        <option value="Marketing">Marketing</option>
     </select></div><div class='col'>
     <b>Drive Branch : </b><select class="form-control" required name="drbranch">
         <option value="ISE">ISE</option>
@@ -65,7 +65,7 @@ else {
 </div>
   </div><br>
 <hr>
-    <button type="submit" class="btn btn-success">Add Event </button>
+    <button type="submit" class="btn btn-success">Add Drive</button>
 
   </form>
 

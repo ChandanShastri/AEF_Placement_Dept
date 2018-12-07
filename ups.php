@@ -50,8 +50,8 @@ else if(isset($_GET['r'])){
   }
 }
 else{
-  session_destroy();
-  header("Location:admin.php");
+  //session_destroy();
+  //header("Location:admin.php");
 }
 
 
