@@ -60,6 +60,6 @@ else {
 
 ?>
 </table>
-<a href='add.php'><button>Back</button></a></center>
+<a href='managedrives.php'><button>Back</button></a></center>
 </body>
 </html>

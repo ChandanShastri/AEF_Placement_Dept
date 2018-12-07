@@ -24,7 +24,7 @@ $_SESSION['y']='z';
       <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Student Portal<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href=""><?php echo $_SESSION['name']; ?><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php">Logout</a>
@@ -35,8 +35,9 @@ $_SESSION['y']='z';
 
     <body><br><br><center>
       <img src='images/1.jpg' width='100%' height="200px"><br><br>
-        <h1>Upcoming Drives</h1><br>
-        <br>
+        <h1>Upcoming Drives</h1>
+        <br>You will be able to see only the drives for which you have Eligibility.<br><br><hr>
+        <h5><b> Your Current CGPA : <?php echo $_SESSION['cgpa']; ?> </b></h5><br>
 </center>
         <?php
 

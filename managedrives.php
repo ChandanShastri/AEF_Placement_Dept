@@ -17,7 +17,7 @@ header("Location:admin.php");
 
 
 <div class="container">
-<br><br><hr><h3>View Registered Students</h3><br>
+<br><br><hr><h3>Placement Drives</h3><br>
 
 <?php
   include "config.php";
@@ -43,6 +43,6 @@ mysqli_close($sccon);
 
 ?>
 
-<br><br><a href='add.php'><button class="btn btn-warning">Back</button></a></center>
+<br><br><a href='admin_panel.php'><button class="btn btn-warning">Back</button></a></center>
 </div></body>
 </html>
