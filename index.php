@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"></a>
@@ -22,8 +21,7 @@
         <li><a href="#about">About Us</a></li>
         <li><a href="http://alvas.org" target="_blank">AEF</a></li>
         <li><a href="http://aiet.org.in" target="_blank">AIET</a></li>
-
-
+        <li><a href="admin.php" target="_blank">Admin Login</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
 
@@ -32,7 +30,7 @@
         <li><a href="#about">About Us</a></li>
         <li><a href="http://alvas.org" target="_blank">AEF</a></li>
         <li><a href="http://aiet.org.in" target="_blank">AIET</a></li>
-
+        <li><a href="http://aiet.org.in" target="_blank">Admin Login</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -237,14 +235,6 @@ Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/mx.min.js"></script>
   <script src="js/init.js"></script>
-
-
-
-
-
-
-
-
 
   </body>
 </html>
