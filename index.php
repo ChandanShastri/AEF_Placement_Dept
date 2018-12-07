@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php
+error_reporting(0);
+session_destroy();
+ ?>
 <html lang="en">
 <head>
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -78,25 +83,51 @@
       <div class="container">
 
         <div class="content-form-page">
+
+          <?php
+          if(isset($_POST['usn']))
+          {
+            include "config.php";
+            $user=strtoupper($_POST['usn']);
+            $pass=$_POST['pass'];
+            $event="SELECT * FROM students where usn='".$user."' AND pass='".$pass."'";
+            //echo $event;
+            $result = mysqli_query($sccon,$event);
+            if(mysqli_num_rows($result)>0)
+            {
+              session_start();
+              $_SESSION['usn']=$user;
+              header("Location:student_portal.php");
+            }
+            else {
+              session_destroy();
+              echo "<script>alert('USN or Password is Wrong..');</script>";
+          }
+          }
+
+
+           ?>
+
+
+
+
           <div class="row">
             <div class="col-md-15 col-sm-7">
-             <form class="form-horizontal" role="form" action="main/index.php" method="post">
+             <form class="form-horizontal" role="form" action="" method="post">
                 <div class="form-group">
-                  <label for="email" class="col-lg-4 control-label"><br><br>Email <span class="require">*</span></label>
+                  <label for="email" class="col-lg-4 control-label"><br><br>USN <span class="require">*</span></label>
                   <div class="col-lg-8">
-                    <input type="text" class="form-control" id="email" name="email" required>
+                    <input type="text" class="form-control" id="email" name="usn" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="password" class="col-lg-4 control-label">Password <span class="require">*</span></label>
                   <div class="col-lg-8">
-                    <input type="password" class="form-control" id="password" name="password" required>
+                    <input type="password" class="form-control" id="password" name="pass" required>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-8 col-md-offset-4 padding-left-0">
-                    <a href="reset.php"><center>Forgot Password?</center></a>
-                  </div>
+
                 </div>
                 <div class="row">
                   <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 07, 2018 at 01:33 PM
+-- Generation Time: Dec 07, 2018 at 02:50 PM
 -- Server version: 5.7.24-0ubuntu0.18.10.1
 -- PHP Version: 7.2.10-0ubuntu1
 
@@ -87,9 +87,10 @@ CREATE TABLE `drive_reg` (
 
 CREATE TABLE `students` (
   `fname` varchar(20) NOT NULL,
-  `lname` varchar(20) NOT NULL,
   `gender` varchar(6) NOT NULL,
+  `dob` date NOT NULL,
   `usn` varchar(10) NOT NULL,
+  `pass` varchar(50) NOT NULL,
   `branch` varchar(3) NOT NULL,
   `sslc` float NOT NULL,
   `puc` float NOT NULL,
@@ -101,8 +102,8 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`fname`, `lname`, `gender`, `usn`, `branch`, `sslc`, `puc`, `aggregate`, `yop`) VALUES
-('Chandan', 'Shastri', 'MALE', '4AL15IS007', 'ISE', 86.5, 75.5, 6.5, 2019);
+INSERT INTO `students` (`fname`, `gender`, `dob`, `usn`, `pass`, `branch`, `sslc`, `puc`, `aggregate`, `yop`) VALUES
+('Chandan Shastri', 'Male', '1997-03-11', '4AL15IS007', '123', 'ISE', 86.5, 75.5, 6.5, 2019);
 
 --
 -- Indexes for dumped tables
