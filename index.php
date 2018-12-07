@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <?php
 error_reporting(0);
 session_destroy();
@@ -10,9 +9,8 @@ session_destroy();
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Alva's Placement Cell</title>
-
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="scfont.css" rel="stylesheet">
   <link href="css/mx.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
@@ -55,10 +53,6 @@ session_destroy();
     </div>
   </div>
 
-
-
-
-
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -77,7 +71,6 @@ session_destroy();
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
 
       <!--   Login Section  -->
       <div class="container">
@@ -115,9 +108,6 @@ session_destroy();
 
            ?>
 
-
-
-
           <div class="row">
             <div class="col-md-15 col-sm-7">
              <form class="form-horizontal" role="form" action="" method="post">
@@ -143,16 +133,8 @@ session_destroy();
                 </div>
 
               </form><br/>
-
             </div>
     </div></div></div>
-
-    </div>
-  </div>
-
-
-
-
 
 
   <div class="parallax-container valign-wrapper">
@@ -165,10 +147,8 @@ session_destroy();
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
-
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center" id="contact">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -179,16 +159,10 @@ Moodbidri - 574 225, Mangalore,<br>
 DK Karnataka State - INDIA<br>
 Call us : +91 8971250414 / +91 8494934852<br>
 Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><br></p>
-
-
-
         </div>
       </div>
-
     </div>
   </div>
-
-
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -197,18 +171,14 @@ Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><
         <div class="row center">
           <h5 class="header col s12 light"></h5>
         </div>
-
         <div class="row center">
           <a href="ScView/aiet1.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1" target="_blank">Take 360 Tour</a>
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
-
-
               <div class="container" id="scrollerrr">
                 <div class="row">
                   <div class="col s12 center" id="Title">
@@ -216,9 +186,7 @@ Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><
                     <p class="blue-text">with our Highly Reputed Recruiters.</p>
                   </div>
                 </div>
-
                 <div class="carousel">
-
                 <a class="carousel-item" href="#two!"><img src="images/CompanyLogo/e%26y.png"></a>
                 <a class="carousel-item" href="#three!"><img src="images/CompanyLogo/tie.png"></a>
                 <a class="carousel-item" href="#four!"><img src="images/CompanyLogo/IBM-logo.png"></a>
@@ -235,26 +203,19 @@ Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><
               <a class="carousel-item" href="#five!"><img src="images/CompanyLogo/tcs.png"></a>
                 </div>
 </div>
-
                 <footer class="page-footer teal">
                   <div class="container" id="about">
                     <div class="row center">
-
                         <h5 class="white-text">About Us</h5>
                         <p class="grey-text text-lighten-4">The backbone of any Institution is Academics and Placements. The placement track record of any Institution is an indication of the success of the Institution. Alva's Education Foundation had recognized this and from the beginning had made deliberate and positive step in making the Placement department very active and vibrant. The foundation organizes mass Placement Drives like Pragati which is an yearly event where organizations from different sectors like Manufacturing, IT, ITES, BFSI, Sales and Retails, take part attend the event. </p>
-
-
                       </div>
-
                         <h5 class="white-text"></h5>
                         <ul>
-
                         </ul>
                       </div>
                       <div class="col l3 s12">
                         <h5 class="white-text"></h5>
                         <ul>
-
                         </ul>
                       </div>
                     </div>
@@ -263,16 +224,11 @@ Email: <a href="mailto:placement.alvas@gmail.com">placement.alvas@gmail.com</a><
                     <div class="container">
                       <center>© Alva's Institute of Engineering & Technology. All Rights Reserved. <br>
                       <br></div>
-
                   </div>
                 </footer>
-
 <!--Designed & Developed by Chandan Shastri - crshastri@gmail.com -->
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jqq.js"></script>
   <script src="js/mx.min.js"></script>
   <script src="js/init.js"></script>
-
   </body>
 </html>
