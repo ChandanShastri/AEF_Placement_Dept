@@ -24,27 +24,28 @@ else{
 
 <?php
 
-$event="SELECT * FROM Events";
+$event="SELECT * FROM drives";
 $result = mysqli_query($sccon,$event);
 
 
-echo "<table class='table table-striped'> <tr><th>Event Name</th> <th>Date</th> <th>Time</th> <th>Branch</th> <th>Brochure</th><th>Delete Event</th></tr>";
+echo "<table class='table table-striped'> <tr><th>Drive Name</th> <th>Date</th> <th>Time</th> <th>Location</th> <th>Registerations</th><th>Delete Drive</th></tr>";
 
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
-    echo "<td>".$row['Event_Name']."</td>";
-    $t=$row['Event_Name'];
-    echo "<td>".$row['Event_Date']."</td>";
-    echo "<td>".$row['Event_Time']."</td>";
-    echo "<td>".$row['Branch']."</td>";
-    echo "<td><a href='pdf.php?q=".$t."'><button class='btn btn-success'>DOWNLOAD BROCHURE</button></td>";
-    echo "<td><a href='pdf.php?d=".$t."'><button class='btn btn-danger'>DELETE</button></td>";
+    echo "<td>".$row['drname']."</td>";
+    $t=$row['dr_id'];
+    echo "<td>".$row['drdate']."</td>";
+    echo "<td>".$row['drtime']."</td>";
+    echo "<td>".$row['drlocation']."</td>";
+    echo "<td><a href='registered.php?q=".$t."'><button class='btn btn-success'>VIEW REGISTERED STUDENTS</button></td>";
+    echo "<td><a href='ups.php?d=".$t."'><button class='btn btn-danger'>DELETE DRIVE</button></td>";
     echo "</tr>";
 }
 echo "</table><br>";
 mysqli_close($sccon);
 
 ?>
-</center>
+
+<br><br><a href='add.php'><button class="btn btn-warning">Back</button></a></center>
 </div></body>
 </html>

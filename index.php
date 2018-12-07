@@ -64,7 +64,7 @@
         </div>
 
         <div class="row center">
-          <a href="signuppro.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up</a>
+          <a href="student_reg.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up</a>
         </div>
         <br><br>
 

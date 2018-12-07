@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 07, 2018 at 12:25 PM
+-- Generation Time: Dec 07, 2018 at 01:33 PM
 -- Server version: 5.7.24-0ubuntu0.18.10.1
 -- PHP Version: 7.2.10-0ubuntu1
 
@@ -63,17 +63,7 @@ CREATE TABLE `drives` (
 --
 
 INSERT INTO `drives` (`dr_id`, `drname`, `drdetails`, `drdate`, `drtime`, `drlocation`, `drtype`, `drbranch`, `drcutoff`) VALUES
-(1, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(2, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(3, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(4, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(5, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(6, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(7, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(8, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(9, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(10, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5),
-(11, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5);
+(10, 'efrewr', 'retret', '2018-12-08', '04:04:00', 'Dakshina Kannada', 'Support Engineer', 'ISE', 5.5);
 
 -- --------------------------------------------------------
 
@@ -108,6 +98,13 @@ CREATE TABLE `students` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`fname`, `lname`, `gender`, `usn`, `branch`, `sslc`, `puc`, `aggregate`, `yop`) VALUES
+('Chandan', 'Shastri', 'MALE', '4AL15IS007', 'ISE', 86.5, 75.5, 6.5, 2019);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -118,6 +115,18 @@ ALTER TABLE `drives`
   ADD PRIMARY KEY (`dr_id`);
 
 --
+-- Indexes for table `drive_reg`
+--
+ALTER TABLE `drive_reg`
+  ADD UNIQUE KEY `dr_id` (`dr_id`,`usn`);
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`usn`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -126,6 +135,16 @@ ALTER TABLE `drives`
 --
 ALTER TABLE `drives`
   MODIFY `dr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `drive_reg`
+--
+ALTER TABLE `drive_reg`
+  ADD CONSTRAINT `dr_check` FOREIGN KEY (`dr_id`) REFERENCES `drives` (`dr_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
