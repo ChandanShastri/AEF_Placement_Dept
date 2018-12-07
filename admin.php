@@ -15,9 +15,6 @@ background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   <li class="nav-item active">
     <a class="nav-link" href="index.php">Placement Dept. Home Page <span class="sr-only">(current)</span></a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="login.php">Login</a>
-  </li>
 </ul>
 </div>
 </nav>
