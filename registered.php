@@ -18,7 +18,7 @@
 </nav>
 <body>
 
-
+<div class="container">
 <?php
 session_start();
 
@@ -35,7 +35,7 @@ $event="select * from drive_reg where dr_id=".$drid;
 $result = mysqli_query($sccon,$event);
 
 
-echo "<table class='table table-striped table-bordered'> <tr><th>Student Name</th> <th>USN</th> <th>Branch</th>  <th>CGPA</th><th>Marks</th></tr>";
+echo "<table class='table table-striped table-bordered'> <tr><th>Student Name</th> <th>USN</th> <th>Branch</th>  <th>CGPA</th><th>Remove</th></tr>";
 
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
@@ -60,6 +60,8 @@ else {
 
 ?>
 </table>
-<a href='managedrives.php'><button>Back</button></a></center>
+<a href='managedrives.php'><button class="btn btn-warning">Back</button></a></center>
+
+</div>
 </body>
 </html>
