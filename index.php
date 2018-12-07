@@ -10,7 +10,7 @@ session_destroy();
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Alva's Placement Cell</title>
   <!-- CSS  -->
-  <link href="scfont.css" rel="stylesheet">
+  <link href="css/scfont.css" rel="stylesheet">
   <link href="css/mx.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
