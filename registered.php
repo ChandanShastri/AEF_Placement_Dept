@@ -24,29 +24,28 @@ session_start();
 
 
 
-echo "<center><h3>Student Registerations for the Drive</h3><br>"
+echo "<center><br><h3>Student Registerations for the Drive</h3><br>";
 
 if(isset($_SESSION['admin'])){
     include "config.php";
 
-if(isset($_GET['v'])){
-$assgcode=$_GET['v'];
-$event="SELECT students.name,uploads.usn,uploads.pdf,uploads.subject,uploads.assg_no,uploads.Marks FROM uploads INNER JOIN students ON uploads.usn=students.usn where uploads.assg_no='".$assgcode."'";
+if(isset($_GET['q'])){
+$drid=$_GET['q'];
+$event="select * from drive_reg where dr_id=".$drid;
 $result = mysqli_query($sccon,$event);
 
 
-echo "<table class='table'> <tr><th>Student Name</th> <th>USN</th> <th>Assignment Subject</th>  <th>PDF</th><th>Marks</th><th>Update Marks</th></tr>";
+echo "<table class='table table-striped table-bordered'> <tr><th>Student Name</th> <th>USN</th> <th>Branch</th>  <th>CGPA</th><th>Marks</th></tr>";
 
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
     echo "<td>".$row['name']."</td>";
     echo "<td>".$row['usn']."</td>";
-    echo "<td>".$row['subject']."</td>";
-    $t=$row['assg_no'];
-    $mm=$row['usn'];
-    echo "<td><a href='pdf.php?ans=".$t."'><button>DOWNLOAD</button></td>";
-    echo "<td>".$row['Marks']."</td>";
-    echo "<td><form action='marks.php' method='POST'><input type='number' min='0' max='10' name='marks'><input type='hidden' name='assg' value='".$t."'><input type='hidden' name='usn' value='".$mm."'><button type='submit'>Update Marks</button></form></td>";
+    echo "<td>".$row['branch']."</td>";
+    echo "<td>".$row['cgpa']."</td>";
+    $t=$row['usn'];
+    $drid=$row['dr_id'];
+    echo "<td><a href='ups.php?rem=".$t."&drid=".$drid."'><button class='btn btn-danger'>REMOVE</button></td>";
     echo "</tr>";
 }
 

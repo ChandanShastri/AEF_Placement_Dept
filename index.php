@@ -93,9 +93,16 @@ session_destroy();
             $event="SELECT * FROM students where usn='".$user."' AND pass='".$pass."'";
             //echo $event;
             $result = mysqli_query($sccon,$event);
+
+
             if(mysqli_num_rows($result)>0)
             {
               session_start();
+              while($row = mysqli_fetch_array($result)) {
+                $_SESSION['cgpa']=$row['aggregate'];
+                $_SESSION['name']=$row['fname'];
+                $_SESSION['branch']=$row['branch'];
+              }
               $_SESSION['usn']=$user;
               header("Location:student_portal.php");
             }
