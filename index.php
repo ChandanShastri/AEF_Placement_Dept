@@ -8,7 +8,7 @@ session_destroy();
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Alva's Placement Cell</title>
+  <title>Alva's Placement Department</title>
   <!-- CSS  -->
   <link href="css/scfont.css" rel="stylesheet">
   <link href="css/mx.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -45,7 +45,7 @@ session_destroy();
       <div class="row">
         <div class="col s12 center" id="Title">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h2 class="orange-text">Alva's Placement Cell</h2>
+          <h2 class="orange-text">Alva's Placement Department</h2>
           <p class="blue-text"> A Unit of Alva's Education Foundation</p>
         </div>
       </div>
