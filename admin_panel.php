@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Placement Dept..<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Placement Dept<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="admin.php">Logout</a>
